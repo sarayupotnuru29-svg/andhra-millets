@@ -1,4 +1,4 @@
-import aboutFarmer from "@/assets/about-farmer.jpg";
+import aboutImage from "@/assets/about-millets-bowl.jpg";
 import milletsField from "@/assets/millets-field.jpeg";
 import { Heart, Eye, Shield, Leaf } from "lucide-react";
 
@@ -17,7 +17,7 @@ const About = () => (
             </p>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img src={aboutFarmer} alt="Indian farmer with millets" className="w-full h-[400px] object-cover rounded-lg" />
+            <img src={aboutImage} alt="Premium millets in a wooden bowl" className="w-full h-[400px] object-cover rounded-lg" />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Contact = () => (
       <div className="grid lg:grid-cols-2 gap-12">
         <div className="space-y-8">
           {[
-            { icon: Phone, title: "Phone", content: "9573311300 / 7899130336" },
+            { icon: Phone, title: "Phone", content: "9573311300\n7899130336" },
             { icon: Mail, title: "Email", content: "gangadharam.konangi@gmail.com" },
             { icon: MapPin, title: "Address", content: "402, Indra Enclave, Alfa Gardens, Ayyappa Nagar, KR Puram, Bangalore, KA-560049" },
           ].map((c, i) => (
@@ -21,7 +21,7 @@ const Contact = () => (
               </div>
               <div>
                 <h3 className="font-heading font-semibold mb-1">{c.title}</h3>
-                <p className="text-muted-foreground text-sm">{c.content}</p>
+                <p className="text-muted-foreground text-sm whitespace-pre-line">{c.content}</p>
               </div>
             </div>
           ))}
