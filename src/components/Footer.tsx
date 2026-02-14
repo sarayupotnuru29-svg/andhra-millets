@@ -11,9 +11,8 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container-main py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="Andhra Millets Logo" className="w-10 h-10 object-contain" />
-            <h3 className="text-xl font-heading font-bold">Andhra Millets</h3>
+          <div className="mb-4">
+            <img src={logo} alt="Andhra Millets Logo" className="h-16 object-contain" />
           </div>
           <p className="text-primary-foreground/80 text-sm leading-relaxed">
             From Farmers to Your Family. Pure, chemical-free millets sourced directly from trusted farmers across India.
