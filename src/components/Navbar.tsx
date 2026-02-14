@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
+import logo from "@/assets/logo-andhra-millets.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -20,8 +21,11 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="container-main flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-2xl lg:text-3xl font-heading font-bold text-primary">Andhra</span>
-          <span className="text-2xl lg:text-3xl font-heading font-bold text-accent">Millets</span>
+          <img src={logo} alt="Andhra Millets Logo" className="w-10 h-10 lg:w-12 lg:h-12 object-contain" />
+          <div className="flex items-baseline gap-1">
+            <span className="text-xl lg:text-2xl font-heading font-bold text-primary">Andhra</span>
+            <span className="text-xl lg:text-2xl font-heading font-bold text-accent">Millets</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
