@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/about-millets-bowl.jpg";
+import aboutImage from "@/assets/about-new.webp";
 import milletsField from "@/assets/millets-field.jpeg";
 import { Heart, Eye, Shield, Leaf } from "lucide-react";
 

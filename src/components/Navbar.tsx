@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
-import logo from "@/assets/logo-andhra-millets.png";
+import logo from "@/assets/apple-touch-icon.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -20,8 +20,19 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="container-main flex items-center justify-between h-16 lg:h-20">
-        <Link to="/" className="flex items-center">
-          <img src={logo} alt="Andhra Millets Logo" className="h-12 lg:h-16 object-contain" />
+        {/* Logo and Website Name Section */}
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src={logo} 
+            alt="Andhra Millets Logo" 
+            className="h-12 lg:h-16 object-contain" 
+          />
+          <span className="text-xl lg:text-2xl font-bold tracking-tight flex gap-1.5 leading-none">
+            {/* Deep Brown for Andhra */}
+            <span className="text-[#5D4037]">Andhra</span>
+            {/* Exact Green from your image for Millets */}
+            <span className="text-[#3D6D4D]">Millets</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
